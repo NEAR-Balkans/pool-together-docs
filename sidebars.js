@@ -15,7 +15,7 @@ module.exports = {
       type: 'category',
       label: 'Contracts',
       items: [
-        'contracts/Draw',
+        'contracts/contract-1',
       ],
     },
     {
