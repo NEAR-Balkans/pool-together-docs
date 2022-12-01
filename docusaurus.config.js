@@ -1,27 +1,27 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Lido On Polygon Docs',
-  tagline: 'Documentation Lido on Polygon staking protocol',
-  url: 'https://polygon.lido.github.io',
+  title: 'Pool Together on NEAR Docs',
+  tagline: 'Documentation Pool Together on NEAR',
+  url: 'https://dev.pooltogether.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon-32x32.png',
-  organizationName: 'lidofinance', // Usually your GitHub org/user name.
-  projectName: 'polygon-docs', // Usually your repo name.
+  organizationName: 'Shard-Labs', // Usually your GitHub org/user name.
+  projectName: 'pool-together-docs', // Usually your repo name.
   themeConfig: {
     prism: {
       additionalLanguages: ['solidity'],
     },
     navbar: {
-      title: 'Lido On Polygon Docs',
+      title: 'Pool Together on NEAR',
       logo: {
-        alt: 'Lido On Polygon Logo',
+        alt: 'Pool Together on NEAR',
         src: 'img/logo.svg',
       },
       items: [
         {
-          href: 'https://github.com/lidofinance',
+          href: 'https://github.com/Shard-Labs/pool-together',
           label: 'GitHub',
           position: 'right',
         },
@@ -36,7 +36,7 @@ module.exports = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/lidofinance/polygon-docs/blob/main/',
+          editUrl: 'https://github.com/Shard-Labs/pool-together-docs/tree/main/docs',
         },
       },
     ],
