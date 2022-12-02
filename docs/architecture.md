@@ -21,6 +21,7 @@ A User can interact with the Pool contract to:
 - Receive tickets
 - Generate picks
 - Claim picks
+- Withdraw deposit
 
 ## User Workflow
 
