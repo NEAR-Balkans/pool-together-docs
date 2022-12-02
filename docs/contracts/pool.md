@@ -69,7 +69,7 @@ fn add_prize_distribution(&mut self, draw_id: DrawId, prize_awards: U128, cardin
 #### Parameters:
 
 | Name           | Type      | Description                                             |
-| -----------    | --------- | ------------------------------------------------------- |
+| -------------- | --------- | ------------------------------------------------------- |
 | id             | DrawId    | Id of the draw                                          |
 | prize_awards   | U128      | Amount of FT tokens, that will be distributed as reward |
 | cardinality    | u8        | Number of sub-divisions of a random number              |
@@ -115,4 +115,23 @@ fn accept_deposit_for_future_fungible_token_transfers(&mut self);
 :::note
 Requirements:
 - Attach some NEAR tokens to the transaction
+:::
+
+### withdraw
+
+Withdraw specified amount of supplied FT tokens
+
+```rust
+fn withdraw(&mut self, ft_tokens_amount: U128);
+```
+
+#### Parameters:
+
+| Name              | Type      | Description                                            |
+| ----------------- | --------- | ------------------------------------------------------ |
+| ft_tokens_amount  | U128      | Amount of FT tokens that the user has supplied or less |
+
+:::note
+Requirements:
+- Cant pass ft_tokens_amount greater than ft_balance_of the calling user
 :::
