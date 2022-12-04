@@ -135,3 +135,68 @@ fn withdraw(&mut self, ft_tokens_amount: U128);
 Requirements:
 - Cant pass ft_tokens_amount greater than ft_balance_of the calling user
 :::
+
+### add_pauser_user
+
+Add user that can pause the contract
+
+```rust
+fn add_pauser_user(&mut self, account_id: AccountId);
+```
+
+#### Parameters:
+
+| Name        | Type      | Description                                            |
+| ----------- | --------- | ------------------------------------------------------ |
+| account_id  | AccountId | User that is going to be able to pause the contract    |
+
+:::note
+Requirements:
+- Cant pass invalid account id
+- Can be called only by owner
+:::
+
+### remove_pauser_user
+
+Remove the ability of the user to pause the contract
+
+```rust
+fn remove_pauser_user(&mut self, account_id: AccountId);
+```
+
+#### Parameters:
+
+| Name        | Type      | Description                                            |
+| ----------- | --------- | ------------------------------------------------------ |
+| account_id  | AccountId | User that is not going to pause the contract           |
+
+:::note
+Requirements:
+- Can be called only by owner
+:::
+
+### pause
+
+Pause the contract, this means that the contract wont be able to accept new deposits to issue withdrawals and claim rewards
+
+```rust
+fn pause(&mut self);
+```
+
+:::note
+Requirements:
+- Can be called only by pauser user
+:::
+
+### resume
+
+Resume the contract, every functionality is ready to be used
+
+```rust
+fn resume(&mut self);
+```
+
+:::note
+Requirements:
+- Can be called only by pauser user
+:::
