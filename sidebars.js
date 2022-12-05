@@ -9,6 +9,7 @@ module.exports = {
       label: 'Guides',
       items: [
         'guides/draw',
+        'guides/pool'
       ],
     },
     {

@@ -43,6 +43,61 @@ fn get_prize_distribution(&self, draw_id: DrawId) -> PrizeDistribution;
 
 ## Methods
 
+## init method
+### new
+
+Initializes the contract
+
+```rust
+fn new(
+    owner_id: AccountId,
+    deposited_token_id: AccountId,
+    metadata: FungibleTokenMetadata,
+    draw_contract: AccountId,
+    burrow_address: AccountId,
+    reward_token: AccountId,
+    min_pick_cost: U128,
+);
+```
+#### Parameters:
+
+| Name               | Type                  | Description                                                        |
+| ------------------ | --------------------- | ------------------------------------------------------------------ |
+| owner_id           | AccountId             | Id of the owner                                                    |
+| deposited_token_id | AccountId             | Id of the token that is going to be accepted only                  |
+| metadata           | FungibleTokenMetadata | Metadata of the tokens that the contract is minting                |
+| draw_contract      | AccountId             | Address of the draw contract                                       |
+| burrow_address     | AccountId             | Address of burrow contract                                         |
+| reward_token       | AccountId             | Id of the token that will be sent to users when they claim rewards |
+| min_pick_cost      | U128                  | Amount of Deposited FT Tokens for each pick                        |
+
+## init method
+
+### new_default_meta
+
+Initializes the contract with default Fungible token metadata
+
+```rust
+fn new_default_meta(
+    owner_id: AccountId, 
+    token_for_deposit: AccountId, 
+    draw_contract: AccountId, 
+    burrow_address: AccountId, 
+    reward_token: AccountId, 
+    min_pick_cost: U128
+);
+```
+#### Parameters:
+
+| Name               | Type      | Description                                                        |
+| ------------------ | ----------| ------------------------------------------------------------------ |
+| owner_id           | AccountId | Id of the owner                                                    |
+| deposited_token_id | AccountId | Id of the token that is going to be accepted only                  |
+| draw_contract      | AccountId | Address of the draw contract                                       |
+| burrow_address     | AccountId | Address of burrow contract                                         |
+| reward_token       | AccountId | Id of the token that will be sent to users when they claim rewards |
+| min_pick_cost      | U128      | Amount of Deposited FT Tokens for each pick                        |
+
 ### get_picks
 
 Returns the number of picks that the caller generates. If the returned number is 100, then the user 

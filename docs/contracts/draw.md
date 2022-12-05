@@ -51,6 +51,22 @@ fn get_draw(&self, id: DrawId) -> Draw
 
 ## Methods
 
+## init method
+### new
+
+Initializes the contract
+
+```rust
+fn new(owner_id: AccountId)
+```
+
+#### Parameters:
+
+| Name        | Type      | Description                                       |
+| ----------- | --------- | ------------------------------------------------- |
+| owner_id    | AccountId | Id of the owner                                   |
+
+
 ### start_draw
 
 Starts a draw
