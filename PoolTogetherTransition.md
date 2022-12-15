@@ -2,7 +2,7 @@
 
 
 ## Repositories
- Markup : * Contracts
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Docs
+* Bullet list
+    * Nested bullet
+        * Sub-nested bullet etc
+* Bullet list item 2
