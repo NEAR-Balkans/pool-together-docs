@@ -18,7 +18,7 @@
 
 
 ## Additional
-### Architecture
+### [Architecture](./docs/architecture.md)
 * [Github File](./docs/architecture.md)
 ### Contracts interface
 * [Github Folder](./docs/contracts/)
