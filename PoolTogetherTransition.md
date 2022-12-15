@@ -2,10 +2,9 @@
 
 
 ## Repositories
-* Contracts
-    * [Repository](https://github.com/Shard-Labs/pool-together)
-* Docs
-    * [Repository](https://github.com/Shard-Labs/pool-together-docs)
+### [Contracts](https://github.com/Shard-Labs/pool-together)
+
+### Docs(https://github.com/Shard-Labs/pool-together-docs)
 
 ## Deployed contracts
 
@@ -19,6 +18,5 @@
 
 ## Additional
 ### [Architecture](./docs/architecture.md)
-* [Github File](./docs/architecture.md)
-### Contracts interface
-* [Github Folder](./docs/contracts/)
+
+### [Contracts interface](./docs/contracts/)
