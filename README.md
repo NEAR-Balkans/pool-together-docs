@@ -1,6 +1,6 @@
-# Lido Docs
+# PoolTogether Docs
 
-PoLido documentation is built using [Docusaurus 2](https://docusaurus.io/). The resulting version of documentation hosted via Github Pages from branch `gh-pages` of this repository.
+PoolTogether documentation is built using [Docusaurus 2](https://docusaurus.io/).
 
 ## Installation
 
@@ -83,10 +83,4 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
-Build and deploy happens automatically when pull request is merged to `main `branch or someone pushes to `main` branch directly.
-
-To build documentation locally and push builded version to the `gh-pages` branch use next command:
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
+Currently there is no deployment pipeline
