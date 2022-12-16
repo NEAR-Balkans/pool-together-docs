@@ -8,14 +8,16 @@ module.exports = {
       type: 'category',
       label: 'Guides',
       items: [
-        'guides/contract-1',
+        'guides/draw',
+        'guides/pool'
       ],
     },
     {
       type: 'category',
       label: 'Contracts',
       items: [
-        'contracts/contract-1',
+        'contracts/draw',
+        'contracts/pool'
       ],
     },
     {
